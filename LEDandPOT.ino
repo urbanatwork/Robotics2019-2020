@@ -7,7 +7,7 @@ void setup() {
 
 void loop() {
   int value = analogRead(A0);  // read A0 pin
-  int brightness = map(value,0,1023,0,255);
-  analogWrite(9,brightness);        // give power to pin 9 
+  int brightness = map(value,0,1023,0,255); // map (convert) value to 0-255 scale.
+  analogWrite(9,brightness);   // give power to pin 9 
   Serial.println(value);       // print out A0 pin value
 } // end of loop!  ============
